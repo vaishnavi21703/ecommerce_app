@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Java</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        color: #1f2937;
+        background: linear-gradient(135deg, #eff6ff, #f5f3ff);
+      }
+
+      .container {
+        width: 100%;
+        max-width: 760px;
+        padding: 40px;
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 18px;
+        box-shadow: 0 16px 40px rgba(31, 41, 55, 0.1);
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        color: #6d28d9;
+        font-size: 0.8rem;
+        font-weight: bold;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 28px;
+        color: #111827;
+        font-size: clamp(2rem, 5vw, 3rem);
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        color: #4c1d95;
+        font-size: 1.35rem;
+      }
+
+      p {
+        margin: 0;
+        color: #4b5563;
+        font-size: 1.05rem;
+        line-height: 1.8;
+      }
+
+      .info {
+        padding: 22px;
+        background: #f5f3ff;
+        border-left: 4px solid #7c3aed;
+        border-radius: 10px;
+      }
+
+      .cta {
+        display: inline-block;
+        margin-top: 28px;
+        padding: 14px 24px;
+        border-radius: 10px;
+        background: #6d28d9;
+        color: #ffffff;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+      }
+
+      .cta:hover {
+        background: #5b21b6;
+        transform: translateY(-1px);
+      }
+
+      .cta:focus-visible {
+        outline: 3px solid #c4b5fd;
+        outline-offset: 3px;
+      }
+
+      @media (max-width: 520px) {
+        .container {
+          padding: 28px 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <p class="eyebrow">Programming language</p>
+      <h1>About Java</h1>
+
+      <section class="info" aria-labelledby="java-heading">
+        <h2 id="java-heading">What is Java?</h2>
+        <p>
+          Java is a high-level, object-oriented programming language. It is
+          platform-independent because Java code runs on the Java Virtual
+          Machine (JVM). Java is used to develop web, desktop, and enterprise
+          applications.
+        </p>
+      </section>
+
+      <a href="test.html" class="cta">Take Test</a>
+    </main>
+  </body>
+</html>
